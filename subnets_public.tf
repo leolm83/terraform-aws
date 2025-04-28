@@ -4,7 +4,7 @@ resource "aws_subnet" "leolms_terraform_public_subnet_1a" {
   availability_zone       = "${data.aws_region.current.name}a"
   map_public_ip_on_launch = true
   tags = merge(local.tags, {
-    Name                     = "leolms-terraform-public-subnet-1a"
+    Name                     = "${var.project_name}-public-subnet-1a"
     "kubernetes.io/role/elb" = 1
   })
 }
@@ -14,7 +14,7 @@ resource "aws_subnet" "leolms_terraform_public_subnet_1b" {
   availability_zone       = "${data.aws_region.current.name}b"
   map_public_ip_on_launch = true
   tags = merge(local.tags, {
-    Name                     = "leolms-terraform-public-subnet-1b"
+    Name                     = "${var.project_name}-public-subnet-1b"
     "kubernetes.io/role/elb" = 1
   })
 }
