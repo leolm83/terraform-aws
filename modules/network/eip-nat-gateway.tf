@@ -1,6 +1,6 @@
 resource "aws_eip" "leolm_terraform_nat_gateway_eip_1a" {
   domain = "vpc"
-  tags = merge(local.tags,
+  tags = merge(var.tags,
     {
       Name = "${var.project_name}-nat-gateway-eip-1a"
     }
@@ -11,7 +11,7 @@ resource "aws_eip" "leolm_terraform_nat_gateway_eip_1a" {
 }
 resource "aws_eip" "leolm_terraform_nat_gateway_eip_1b" {
   domain = "vpc"
-  tags = merge(local.tags,
+  tags = merge(var.tags,
     {
       Name = "${var.project_name}-nat-gateway-eip-1b"
     }
