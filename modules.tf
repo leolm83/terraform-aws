@@ -4,3 +4,8 @@ module "leolm_terraform_network" {
   project_name = var.project_name
   tags         = local.tags
 }
+module "leolm_terraform_eks_cluster" {
+  source       = "./modules/cluster"
+  project_name = var.project_name
+  tags         = local.tags
+}
