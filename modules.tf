@@ -5,7 +5,10 @@ module "leolm_terraform_network" {
   tags         = local.tags
 }
 module "leolm_terraform_eks_cluster" {
-  source       = "./modules/cluster"
-  project_name = var.project_name
-  tags         = local.tags
+  source           = "./modules/cluster"
+  project_name     = var.project_name
+  tags             = local.tags
+  public_subnet_1a = module.leolm_terraform_network.public_subnet_1a
+  public_subnet_1b = module.leolm_terraform_network.public_subnet_1b
+  my_ip_cidr       = var.my_ip_cidr
 }
