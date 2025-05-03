@@ -20,3 +20,8 @@ module "leolm_terraform_managed_node_group" {
   private_subnet_1a = module.leolm_terraform_network.private_subnet_1a
   private_subnet_1b = module.leolm_terraform_network.private_subnet_1b
 }
+module "eks_aws_load_balancer_controller" {
+  source       = "./modules/aws-load-balancer-controller"
+  project_name = var.project_name
+  tags         = local.tags
+}
