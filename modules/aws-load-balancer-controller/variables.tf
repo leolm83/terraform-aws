@@ -6,4 +6,7 @@ variable "tags" {
   type        = map(any)
   description = "Tags to be added to AWS resources"
 }
-
+variable "cluster_name" {
+  type        = string
+  description = "EKS cluster name"
+}

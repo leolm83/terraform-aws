@@ -24,4 +24,5 @@ module "eks_aws_load_balancer_controller" {
   source       = "./modules/aws-load-balancer-controller"
   project_name = var.project_name
   tags         = local.tags
+  cluster_name = module.leolm_terraform_eks_cluster.cluster_name
 }
