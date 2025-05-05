@@ -47,4 +47,5 @@
 | <a name="output_private_subnet_1b"></a> [private\_subnet\_1b](#output\_private\_subnet\_1b) | n/a |
 | <a name="output_public_subnet_1a"></a> [public\_subnet\_1a](#output\_public\_subnet\_1a) | n/a |
 | <a name="output_public_subnet_1b"></a> [public\_subnet\_1b](#output\_public\_subnet\_1b) | n/a |
+| <a name="output_teste"></a> [teste](#output\_teste) | n/a |
 <!-- END_TF_DOCS -->

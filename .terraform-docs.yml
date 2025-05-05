@@ -1,0 +1,4 @@
+formatter: "markdown" # this is required
+
+recursive:
+  enabled: true

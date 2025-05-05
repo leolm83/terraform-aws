@@ -16,3 +16,6 @@ output "eks_vpc_config" {
 output "oidc" {
   value = module.leolm_terraform_eks_cluster.oidc
 }
+output "teste" {
+  value = "teste"
+}
